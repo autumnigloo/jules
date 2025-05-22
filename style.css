@@ -1,0 +1,85 @@
+/* Body/Overall Page */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0; /* Basic background color */
+    margin: 0;
+    padding-top: 20px; /* Added some padding at the top */
+}
+
+/* Game Board (#game-board) */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    border: 2px solid #333;
+    background-color: #008000; /* Green background for the board */
+    margin-bottom: 20px;
+}
+
+/* Cells (.cell) */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Important for borders not to add to size */
+    cursor: pointer;
+}
+
+/* Pieces (.black-piece, .white-piece) */
+.black-piece, .white-piece {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.black-piece {
+    background-color: black;
+}
+
+.white-piece {
+    background-color: white;
+    border: 1px solid #ccc; /* To make white pieces visible */
+}
+
+/* Scoreboard (#score-container) */
+#score-container {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    display: flex; /* Added to place scores side-by-side */
+    gap: 20px; /* Added gap between scores */
+}
+
+/* Messages (#message-area) */
+#message-area {
+    font-size: 1.1em;
+    color: #d32f2f; /* A reddish color for errors/info */
+    margin-bottom: 15px;
+    height: 20px; /* To prevent layout shifts */
+    text-align: center; /* Center align the text */
+}
+
+/* Button (#reset-button) */
+#reset-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    transition-duration: 0.4s; /* Animation */
+}
+
+#reset-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
