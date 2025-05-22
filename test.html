@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Othello Game Tests</title>
+    <!-- Include the main game script -->
+    <script src="script.js"></script>
+    <!-- Include the test runner script -->
+    <script defer src="test_runner.js"></script>
+    <style>
+        body { font-family: sans-serif; }
+        .test-results li.passed { color: green; }
+        .test-results li.failed { color: red; }
+    </style>
+</head>
+<body>
+    <h1>Othello Game Logic Tests</h1>
+    <ul id="test-results"></ul>
+    <!-- Minimal HTML elements required by script.js for it to load without error -->
+    <div id="game-board"></div>
+    <div id="score-container">
+        <span id="black-score"></span>
+        <span id="white-score"></span>
+    </div>
+    <div id="message-area"></div>
+    <button id="reset-button">Reset Game</button>
+</body>
+</html>
